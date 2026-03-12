@@ -1,0 +1,106 @@
+body{
+background:black;
+color:white;
+text-align:center;
+font-family:Arial;
+margin:0;
+}
+
+/* INTRO */
+
+#intro{
+position:fixed;
+width:100%;
+height:100vh;
+background:black;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.flags img{
+width:80px;
+margin:10px;
+animation:wave 2s infinite;
+}
+
+.logo{
+font-size:50px;
+margin-top:20px;
+color:#00eaff;
+letter-spacing:4px;
+}
+
+@keyframes wave{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(5deg);}
+50%{transform:rotate(0deg);}
+75%{transform:rotate(-5deg);}
+100%{transform:rotate(0deg);}
+}
+
+button{
+padding:12px 20px;
+margin:10px;
+border:none;
+border-radius:10px;
+background:#00eaff;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00bcd4;
+}
+#main{
+display:none;
+}
+.country{
+display:inline-block;
+margin:20px;
+text-decoration:none;
+color:white;
+}
+
+.country img{
+width:80px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.country img:hover{
+transform:scale(1.1);
+}
+
+.country p{
+margin-top:5px;
+font-size:18px;
+}
+.number-card{
+background:#111;
+border:1px solid #00eaff;
+padding:20px;
+margin:20px auto;
+width:250px;
+border-radius:10px;
+}
+
+.price{
+color:#00eaff;
+font-size:20px;
+font-weight:bold;
+}
+
+.buy{
+background:#00eaff;
+color:black;
+padding:10px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.buy:hover{
+background:#00bcd4;
+}
